@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hackklin</string>
+    <string name="tab_routes">Rutas</string>
+    <string name="tab_challenges">Retos</string>
+    <string name="tab_profile">Perfil</string>
+    <string name="header_subtitle">PLATAFORMA TÁCTICA DE CIBERSEGURIDAD</string>
+    <string name="streak_days_label">Días de Racha</string>
+    <string name="streak_active_hint">Ventana de 24h activa</string>
+    <string name="streak_expired_hint">Completa una lección o reto hoy para iniciar racha</string>
+    <string name="xp_label">XP Total</string>
+    <string name="rank_label">Rango Actual</string>
+    <string name="level_locked_msg">Completa el 100% del nivel anterior para desbloquear este rango.</string>
+    <string name="topic_step_theory">1. Teoría</string>
+    <string name="topic_step_lab">2. Lab CLI</string>
+    <string name="topic_step_quiz">3. Quiz Final</string>
+    <string name="terminal_run">Ejecutar</string>
+    <string name="terminal_clear">Limpiar</string>
+    <string name="terminal_hint">Pista</string>
+    <string name="terminal_placeholder">Escribe un comando o usa los chips inferiores…</string>
+    <string name="challenge_locked">Se desbloquea al avanzar al Nivel %1$d</string>
+    <string name="reset_progress">Reiniciar Progreso Local</string>
+    <string name="reset_confirm">¿Seguro que deseas reiniciar todo el progreso guardado en el dispositivo?</string>
+</resources>
