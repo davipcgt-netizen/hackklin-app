@@ -1,0 +1,6 @@
+{
+  "name": "Hackklin",
+  "description": "Plataforma interactiva y gamificada de educación en ciberseguridad y hacking ético con consola CLI híbrida, 8 niveles secuenciales y rachas diarias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

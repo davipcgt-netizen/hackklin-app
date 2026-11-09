@@ -1,0 +1,85 @@
+{
+  "entities": {
+    "UserCloudProfile": {
+      "title": "UserCloudProfile",
+      "description": "Authenticated Hackklin user profile, preferences, XP, and streak telemetry.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated Firebase UID matching request.auth.uid."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "User display name from Google Sign-In."
+        },
+        "email": {
+          "type": "string",
+          "description": "User email address from Google Sign-In."
+        },
+        "totalXp": {
+          "type": "integer",
+          "description": "Total XP accumulated across topics and challenges."
+        },
+        "currentStreakDays": {
+          "type": "integer",
+          "description": "Consecutive active days count."
+        },
+        "longestStreakDays": {
+          "type": "integer",
+          "description": "Highest consecutive active days count achieved."
+        },
+        "totalCommandsExecuted": {
+          "type": "integer",
+          "description": "Total valid CLI commands executed."
+        },
+        "selectedInitialLevel": {
+          "type": "integer",
+          "description": "Starting experience level chosen during onboarding (1..8)."
+        },
+        "preferredTheme": {
+          "type": "string",
+          "enum": ["DARK", "LIGHT"],
+          "description": "Selected visual theme mode."
+        },
+        "preferredLanguage": {
+          "type": "string",
+          "enum": ["ES", "EN"],
+          "description": "Selected interface language."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of profile creation (FieldValue.serverTimestamp())."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp of last profile update (FieldValue.serverTimestamp())."
+        }
+      },
+      "required": [
+        "userId",
+        "displayName",
+        "email",
+        "totalXp",
+        "currentStreakDays",
+        "longestStreakDays",
+        "totalCommandsExecuted",
+        "selectedInitialLevel",
+        "preferredTheme",
+        "preferredLanguage",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserCloudProfile"
+      },
+      "description": "Stores each authenticated user's Hackklin cloud profile, rank XP, streak, and preferences."
+    }
+  }
+}
